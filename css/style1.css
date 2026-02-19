@@ -21,3 +21,9 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+.portfolio-img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
