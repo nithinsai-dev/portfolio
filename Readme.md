@@ -25,9 +25,17 @@ https://nithinsai-dev.github.io/portfolio/
 
 ---
 
-## 📸 Screenshot
+## 🚀 Future Improvements
 
-Add a screenshot of your homepage inside the `images` folder and rename it as `screenshot.png`.
+Here are some features and enhancements planned for the portfolio:
 
-```markdown
-![Portfolio Screenshot](./images/screenshot.png)
+- ✨ Add smooth animations and transitions
+- 🎯 Improve accessibility and usability
+- 🔍 SEO optimization for better visibility
+- 📊 Add more real-world and full-stack projects
+- 🌐 Backend integration for dynamic content
+- 📱 Enhance mobile responsiveness
+- ⚡ Improve performance and loading speed
+- 🎨 Advanced UI/UX design upgrades
+
+
