@@ -1,5 +1,10 @@
+* {
+    transition: all 0.3s ease;
+}
+
 .nav-link {
     color: #ffffff;
+    position: relative;
 }
 
 .nav-pills .nav-link.active {
@@ -7,6 +12,11 @@
     color: white;
     border-radius: 8px;
 }
+
+.nav-link:hover {
+    color: #7c3aed;
+}
+
 
 .nav-pills .nav-link {
     color: white;
@@ -31,23 +41,22 @@ body {
 
 .home-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .intro {
     font-family: 'Alfa Slab One', cursive;
-    font-size: 7rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: 20px;
     font-style: normal;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .sub-text-1 {
     font-family: 'Niccone', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -56,7 +65,7 @@ body {
 
 .sub-text {
     font-family: 'Niccone', cursive;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 10px;
 }
@@ -65,4 +74,28 @@ body {
     color: #7b2ff7;
     font-weight: 600;
     font-family: poppins, sans-serif;
+}
+
+.profile-pic {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
