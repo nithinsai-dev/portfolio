@@ -1,0 +1,23 @@
+.btn-primary {
+    background-color: #7c3aed;
+    border: none;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #6d28d9;
+}
+
+body {
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+.fs-4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
