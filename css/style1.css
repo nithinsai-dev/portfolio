@@ -1,14 +1,21 @@
-.btn-primary {
-    background-color: #7c3aed;
-    border: none;
-}
-
 .nav-link {
     color: #ffffff;
 }
 
-.btn-primary:hover {
-    background-color: #6d28d9;
+.nav-pills .nav-link.active {
+    background: linear-gradient(45deg, #7b2ff7, #9f44d3);
+    color: white;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link {
+    color: white;
+}
+
+.portfolio-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
 }
 
 body {
@@ -22,8 +29,40 @@ body {
     letter-spacing: 1px;
 }
 
-.portfolio-img {
-    height: 15rem;
-    width: 15rem;
-    border-radius: 50%;
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 20px;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+.sub-text-1 {
+    font-family: 'Niccone', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #7b2ff7;
+}
+
+.sub-text {
+    font-family: 'Niccone', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #7b2ff7;
+    font-weight: 600;
+    font-family: poppins, sans-serif;
 }

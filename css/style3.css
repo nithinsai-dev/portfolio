@@ -1,15 +1,17 @@
-.btn-primary {
-    background-color: #7c3aed;
-    border: none;
-}
-
 .nav-link {
     color: #ffffff;
 }
 
-.btn-primary:hover {
-    background-color: #6d28d9;
+.nav-pills .nav-link.active {
+    background: linear-gradient(45deg, #7b2ff7, #9f44d3);
+    color: white;
+    border-radius: 8px;
 }
+
+.nav-pills .nav-link {
+    color: white;
+}
+
 
 body {
     background-color: #0d1117;
