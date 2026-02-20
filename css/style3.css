@@ -19,7 +19,15 @@ body {
 }
 
 .fs-4 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Niccone', cursive;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.content {
+    align-items: center;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-family: 'Niccone', cursive;
 }

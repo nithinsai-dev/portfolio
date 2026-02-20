@@ -19,13 +19,13 @@ body {
 }
 
 .fs-4 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Niccone', cursive;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .heading {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: Inter, sans-serif;
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -42,7 +42,6 @@ body {
     align-items: left;
     justify-content: center;
     gap: 5px;
-    margin-left: 150px;
 }
 
 .motivation {
