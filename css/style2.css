@@ -16,6 +16,7 @@
 body {
     background-color: #0d1117;
     color: #ffffff;
+    font-family: 'Niccone', cursive;
 }
 
 .fs-4 {
@@ -26,31 +27,30 @@ body {
 
 .heading {
     font-family: Inter, sans-serif;
-    font-size: 3rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
 }
 
 .sub-text {
     font-family: 'Niccone', cursive;
-    font-size: 1.4rem;
+    font-size: 1rem;
     letter-spacing: 1px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    gap: 5px;
-}
-
-.motivation {
-    font-family: 'Niccone', cursive;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    margin-top: 30px;
 }
 
 .highlight {
     color: #7b2ff7;
+}
+
+.box {
+    border-radius: 20px;
+    padding: 20px;
+
+    background: #0b1220;
+
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+
+    box-shadow: 0 0 60px rgba(124, 58, 237, 0.4);
+    font-size: 1.2rem;
+
 }
