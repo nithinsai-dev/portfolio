@@ -128,7 +128,7 @@ body {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: rgba(29, 158, 117, 0.12);
+    background-color: rgba(13, 233, 164, 0.825);
     animation: pulse 1.5s ease-in-out infinite;
 }
 
