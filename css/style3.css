@@ -37,6 +37,99 @@ body {
     height: 100vh;
 }
 
+.highlight {
+    color: #7b2ff7;
+}
+
+.card-link {
+    color: #7b2ff7;
+}
+
+.card-link:hover {
+    color: hsl(263, 93%, 68%);
+}
+
 .sticky-top {
     background-color: #0d1117;
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+.bottom {
+    animation: slideUp 1.2s ease-in-out forwards;
+}
+
+body .card {
+    animation: slideLeft 2s ease-in-out forwards, glow 6s ease-in-out infinite;
+    transition: transform 0.7s ease;
+}
+
+body .card:hover {
+    transform: translateY(-20px) !important;
+    box-shadow: 0 0 30px #7b2ff7, 0 0 60px #7b2ff7;
+    animation-play-state: paused;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #7b2ff7,
+            0 0 15px #7b2ff7;
+    }
+
+    50% {
+        box-shadow: 0 0 25px #7b2ff7,
+            0 0 45px #7b2ff7;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #7b2ff7,
+            0 0 15px #7b2ff7;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
