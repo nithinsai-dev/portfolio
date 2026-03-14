@@ -8,14 +8,18 @@
     border-radius: 8px;
 }
 
+.nav-link:hover {
+    color: #7c3aed;
+}
+
 .nav-pills .nav-link {
     color: white;
 }
 
-
 body {
     background-color: #0d1117;
     color: #ffffff;
+    font-family: 'Niccone', cursive;
 }
 
 .fs-4 {

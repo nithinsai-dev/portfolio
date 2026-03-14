@@ -12,6 +12,14 @@
     color: white;
 }
 
+header {
+    animation: slideDown 1s ease forwards;
+}
+
+.bottom {
+    animation: slideUp 1.2s ease forwards;
+}
+
 
 body {
     background-color: #0d1117;
@@ -41,7 +49,7 @@ body {
     color: #7b2ff7;
 }
 
-.box {
+body .box {
     border-radius: 20px;
     padding: 20px;
 
@@ -49,12 +57,145 @@ body {
 
     border-top: 1px solid white;
     border-left: 1px solid white;
-
-    box-shadow: 0 0 60px rgba(124, 58, 237, 0.4);
     font-size: 1.2rem;
-
 }
 
 .sticky-top {
     background-color: #0d1117;
+}
+
+body .box-1 {
+    animation: slideLeft 1.6s ease forwards, glow 6s ease-in-out infinite;
+}
+
+body .box-2 {
+    animation: slideRight 1.8s ease forwards, glow 6s ease-in-out infinite;
+}
+
+body .box-3 {
+    animation: fadeOut 1.8s ease forwards, glow 6s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.7);
+        box-shadow: 0 0 0 0 rgba(29, 158, 117, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(29, 158, 117, 0);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+
+    0% {
+        box-shadow:
+            0 0 10px #7b2ff7,
+            0 0 15px #7b2ff7;
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px #7b2ff7,
+            0 0 45px #7b2ff7;
+    }
+
+    100% {
+        box-shadow:
+            0 0 10px #7b2ff7,
+            0 0 15px #7b2ff7;
+    }
+
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #7b2ff7;
+    }
+
+    50% {
+        text-shadow: 0 0 15px #7b2ff7;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #7b2ff7;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
