@@ -97,3 +97,15 @@ body {
     transform: translateY(-6px) scale(1.1);
     color: #7b2ff7;
 }
+
+.sticky-top {
+    background-color: #0d1117;
+}
+
+.height {
+    margin-top: 7rem;
+}
+
+.height-center {
+    margin-top: 5rem;
+}
