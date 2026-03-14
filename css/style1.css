@@ -140,7 +140,7 @@ body {
 
 @keyframes slideDown {
     from {
-        transform: translateY(30px);
+        transform: translateY(-30px);
         opacity: 0;
     }
 
@@ -152,7 +152,7 @@ body {
 
 @keyframes slideUp {
     from {
-        transform: translateY(-30px);
+        transform: translateY(30px);
         opacity: 0;
     }
 
