@@ -68,9 +68,9 @@ body .card {
 }
 
 body .card:hover {
-    width: 500px;
-    height: 700px;
-    transform: translateY(-20px) !important;
+    width: 400px;
+    height: 550px;
+    transform: translateY(-5px) !important;
     box-shadow: 0 8px 32px rgba(123, 47, 247, 0.35),
         0 2px 8px rgba(0, 0, 0, 0.4);
     animation-play-state: paused;
@@ -97,6 +97,38 @@ body .card:hover {
     text-decoration: none;
 }
 
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge-normal {
+    color: #a898c8;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.badge-skills {
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.badge-highlight {
+    color: #c4a8ff;
+    background: rgba(123, 47, 247, 0.1);
+    border: 1px solid rgba(123, 47, 247, 0.35);
+    display: inline;
+    padding: 0 10px;
+}
+
+.badge-learning {
+    border-radius: 15px;
+    font-size: 1rem;
+}
 
 @keyframes slideDown {
     0% {
