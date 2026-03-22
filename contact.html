@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithin's portfolio About</title>
+    <link rel="icon" href="./images/N.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg sticky-top px-4 py-3">
+            <a class="navbar-brand fs-4" href="index.html">
+                <img src="images/N.png" alt="Nithin's Portfolio Logo" height="32" class="me-2">
+                Nithin Sai
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav nav-pills gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container py-5 bottom-animation">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+
+                    <div class="contact-hero">
+                        <h1>Let's connect</h1>
+                        <p>Open to internships, collaborations, and interesting projects. Drop a message — I'll reply.
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <a href="https://github.com/nithinsai-dev" target="_blank" class="contact-card">
+                            <div class="contact-icon">🐙</div>
+                            <div class="contact-card-text">
+                                <strong>GitHub</strong>
+                                <span>github.com/nithinsai-dev</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/nithinsai" target="_blank" class="contact-card">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-card-text">
+                                <strong>LinkedIn</strong>
+                                <span>linkedin.com/in/nithinsai</span>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/nithinsai_dev" target="_blank" class="contact-card">
+                            <div class="contact-icon">🐦</div>
+                            <div class="contact-card-text">
+                                <strong>Twitter / X</strong>
+                                <span>@nithinsai_dev</span>
+                            </div>
+                        </a>
+                        <a href="mailto:nithinsai@email.com" class="contact-card">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-card-text">
+                                <strong>Email</strong>
+                                <span>nithinsai@email.com</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="form-box">
+                        <div class="form-title">Send a message</div>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="form-row">
+                                <div class="field">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required />
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's it about?"
+                                    required />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Hey Nithin, I'd love to..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send message →</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="contact-footer">
+            © 2026 Nithin Sai. All rights reserved.
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
