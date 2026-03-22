@@ -143,6 +143,10 @@ body {
     margin-bottom: 16px;
 }
 
+.highlight {
+    color: hsl(259, 94%, 73%);
+}
+
 .field label {
     display: block;
     font-size: 12px;
