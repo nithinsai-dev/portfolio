@@ -45,6 +45,7 @@ body {
 .contact-hero {
     text-align: center;
     margin-bottom: 36px;
+    animation: fadeIn 1.2s ease-in-out forwards;
 }
 
 .contact-hero h1 {
@@ -70,6 +71,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
     margin-bottom: 28px;
+    animation: slideLeft 1.4s ease-in-out forwards;
 }
 
 .contact-card {
@@ -122,6 +124,7 @@ body {
     border: 0.5px solid rgba(123, 47, 247, 0.15);
     border-radius: 16px;
     padding: 32px;
+    animation: slideRight 1.6s ease-in-out forwards;
 }
 
 .form-title {
@@ -246,5 +249,43 @@ body {
 
     .form-box {
         padding: 22px 18px;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
