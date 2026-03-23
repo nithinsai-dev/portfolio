@@ -16,10 +16,33 @@
     color: white;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #0d1117;
     color: #ffffff;
     font-family: 'Niccone', cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+}
+
+.bottom {
+    margin-top: auto;
 }
 
 .fs-4 {
@@ -68,8 +91,7 @@ body .card {
 }
 
 body .card:hover {
-    width: 400px;
-    height: 550px;
+    height: auto;
     transform: translateY(-5px) !important;
     box-shadow: 0 8px 32px rgba(123, 47, 247, 0.35),
         0 2px 8px rgba(0, 0, 0, 0.4);
@@ -101,6 +123,7 @@ body .card:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin: 0 10px;
 }
 
 .badge-normal {
