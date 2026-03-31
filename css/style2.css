@@ -64,7 +64,7 @@ body {
 }
 
 .vision-text {
-    font-size: 0.9 rem;
+    font-size: 1rem;
     color: #c6b2d9
 }
 
@@ -226,6 +226,12 @@ body .box-3 {
 .edu-to {
     color: #5e4d8a !important;
     font-size: 1rem;
+}
+
+.badge-skills i {
+    font-size: 0.9rem;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 
