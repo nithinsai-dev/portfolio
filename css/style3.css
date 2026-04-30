@@ -64,14 +64,6 @@ body {
     color: #7b2ff7;
 }
 
-.card-link {
-    color: #7b2ff7;
-}
-
-.card-link:hover {
-    color: hsl(263, 93%, 68%);
-}
-
 .sticky-top {
     background-color: #0d1117;
     animation: slideDown 1s ease-in-out forwards;
@@ -81,49 +73,76 @@ body {
     animation: slideUp 1.4s ease-in-out forwards;
 }
 
+/* CARD */
 body .card {
     width: 400px;
-    height: 450px;
-    overflow: hidden;
+    min-height: 450px;
+    overflow: visible;
     animation: slideLeft 1.2s ease-in-out forwards;
-    transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     border-radius: 20px;
 }
 
 body .card:hover {
-    height: auto;
-    transform: translateY(-5px) !important;
-    box-shadow: 0 8px 32px rgba(123, 47, 247, 0.35),
-        0 2px 8px rgba(0, 0, 0, 0.4);
-    animation-play-state: paused;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(123, 47, 247, 0.35), 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-.card .info {
+/* IMAGE WRAPPER — overlay lives here */
+.img-wrapper {
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 17, 23, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease 0.2s;
+    transition: opacity 0.3s ease;
 }
 
-.card:hover .info {
+.card:hover .card-overlay {
     opacity: 1;
-    visibility: visible;
 }
 
-.btn {
-    background: linear-gradient(45deg, #7b2ff7, #9f44d3);
-    border-radius: 20px;
-}
-
-.text {
-    color: white;
+.overlay-btn {
+    padding: 9px 22px;
+    border: 1px solid #7b2ff7;
+    color: #c4a8ff;
     text-decoration: none;
+    font-size: 0.82rem;
+    border-radius: 20px;
+    background: rgba(123, 47, 247, 0.15);
+    transition: background 0.2s;
 }
 
+.overlay-btn:hover {
+    background: rgba(123, 47, 247, 0.35);
+    color: #fff;
+}
+
+/* BADGES — always visible, outside overflow:hidden */
 .badge-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 0 10px;
+    margin: 10px 10px 16px;
 }
 
 .badge-normal {
