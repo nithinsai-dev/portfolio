@@ -1,5 +1,6 @@
 .nav-link {
     color: #ffffff;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-pills .nav-link.active {
@@ -23,25 +24,25 @@ header {
 
 body {
     background-color: #0d1117;
-    font-family: 'Niccone', cursive;
+    font-family: 'Inter', sans-serif;
     color: #a89cc8;
 }
 
 .fs-4 {
-    font-family: 'Niccone', cursive;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .heading {
-    font-family: Inter, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.7rem;
     margin-bottom: 20px;
     color: #ede8ff;
 }
 
 .sub-text {
-    font-family: 'Niccone', cursive;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
 }
@@ -86,6 +87,7 @@ body .box {
     border-radius: 15px;
     height: 25px;
     margin: 0.8rem 0;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
 }
 
@@ -106,26 +108,29 @@ body .box {
     display: inline;
     padding: 0 10px;
     border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .badge-skills {
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .badge-learning {
     border-radius: 15px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .badge-mindset {
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-shadow: -4px 0 0 rgb(114, 35, 242);
+    font-family: 'Inter', sans-serif;
 }
 
 .mindset-text {
     margin-left: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
 .box-career {
@@ -164,6 +169,7 @@ body .box {
     border: 1px solid rgba(123, 47, 247, 0.35);
     display: inline;
     padding: 0 10px;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .box:hover {

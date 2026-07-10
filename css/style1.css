@@ -17,7 +17,6 @@
     box-sizing: border-box;
 }
 
-/* ---------- NAV (unchanged behavior, matches about/project) ---------- */
 .nav-link {
     color: #ffffff;
     font-family: var(--font-body);
@@ -62,7 +61,6 @@ body {
     font-weight: 600;
 }
 
-/* ---------- SHARED BOX / BADGE SYSTEM (same as about.html / project.html) ---------- */
 .box {
     border-radius: 20px;
     padding: 20px;
@@ -125,7 +123,6 @@ body {
     animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* ---------- HERO ---------- */
 .main {
     padding-top: 1rem;
 }
@@ -214,7 +211,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ---------- SIGNATURE (replaces photo) ---------- */
 .signature-wrap {
     position: relative;
     display: flex;
@@ -361,7 +357,6 @@ body {
     animation-delay: 1.5s;
 }
 
-/* ---------- CONNECT ---------- */
 .connect-row {
     display: flex;
     align-items: center;
@@ -410,7 +405,7 @@ body {
     animation: slideUp 1.2s ease forwards;
 }
 
-/* ---------- ANIMATIONS ---------- */
+
 @keyframes slideDown {
     from {
         transform: translateY(-30px);
@@ -507,7 +502,6 @@ body {
     }
 }
 
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 991px) {
     .hero-title {
         font-size: 2.1rem;
@@ -523,7 +517,6 @@ body {
     }
 }
 
-/* ---------- ACCESSIBILITY ---------- */
 a:focus-visible,
 .btn-primary-glow:focus-visible,
 .btn-outline-ghost:focus-visible {
