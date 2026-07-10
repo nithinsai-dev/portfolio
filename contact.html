@@ -16,113 +16,134 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <div class="container">
-        <nav class="navbar navbar-expand-lg sticky-top px-4 py-3">
-            <a class="navbar-brand fs-4" href="index.html">
-                <img src="images/N.png" alt="Nithin's Portfolio Logo" height="32" class="me-2">
-                Nithin Sai
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav nav-pills gap-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="project.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
-                    </li>
+        <section class="sticky-top">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/index.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="./images/N.png" alt="Nithin's Portfolio Logo" width="40" height="32" class="me-2">
+                    <span class="fs-4">Nithin Sai</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./project.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link active"
+                            aria-current="page">Contact</a></li>
                 </ul>
+            </header>
+        </section>
+
+        <section class="main">
+
+            <div class="page-intro">
+                <p class="page-eyebrow">Get In Touch</p>
+                <h1 class="page-title">Let's <span class="highlight">connect</span>.</h1>
+                <p class="page-sub">Open to internships, collaborations, and interesting projects.
+                    Drop a message — I'll reply.</p>
             </div>
-        </nav>
 
-        <div class="contact-wrap">
-            <div class="aurora-blob" aria-hidden="true"></div>
-
-            <div class="contact-layout">
-                <div class="contact-info-col">
-                    <p class="page-eyebrow">Get In Touch</p>
-                    <h1 class="contact-title">Let's <span class="highlight">connect</span>.</h1>
-                    <p class="contact-sub">Open to internships, collaborations, and interesting
-                        projects. Drop a message — I'll reply.</p>
-
-                    <div class="contact-grid">
-                        <a href="https://github.com/nithinsai-dev" target="_blank" class="contact-card">
-                            <div class="contact-icon">🐙</div>
-                            <div class="contact-card-text">
-                                <strong>GitHub</strong>
-                                <span>github.com/nithinsai-dev</span>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nithin-sai07/" target="_blank" class="contact-card">
-                            <div class="contact-icon">💼</div>
-                            <div class="contact-card-text">
-                                <strong>LinkedIn</strong>
-                                <span>linkedin.com/in/nithinsai</span>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/nithinzx.7/" target="_blank" class="contact-card">
-                            <div class="contact-icon">🐦</div>
-                            <div class="contact-card-text">
-                                <strong>Instagram</strong>
-                                <span>nithinzx.07</span>
-                            </div>
-                        </a>
-                        <a href="mailto:ninsai2007@gmail.com" class="contact-card">
-                            <div class="contact-icon">✉️</div>
-                            <div class="contact-card-text">
-                                <strong>Email</strong>
-                                <span>ninsai2007@gmail.com</span>
-                            </div>
-                        </a>
-                    </div>
+            <article class="about-section reveal">
+                <div class="section-label">
+                    <span class="section-index">01</span>
+                    <span class="section-name">Reach me</span>
                 </div>
+                <div class="section-body">
+                    <ul class="reach-list">
+                        <li>
+                            <a href="https://github.com/nithinsai-dev" target="_blank" class="reach-row">
+                                <span class="reach-icon">🐙</span>
+                                <span class="reach-name">GitHub</span>
+                                <span class="reach-handle">github.com/nithinsai-dev</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nithin-sai07/" target="_blank" class="reach-row">
+                                <span class="reach-icon">💼</span>
+                                <span class="reach-name">LinkedIn</span>
+                                <span class="reach-handle">linkedin.com/in/nithinsai</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/nithinzx.7/" target="_blank" class="reach-row">
+                                <span class="reach-icon">🐦</span>
+                                <span class="reach-name">Instagram</span>
+                                <span class="reach-handle">nithinzx.07</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ninsai2007@gmail.com" class="reach-row">
+                                <span class="reach-icon">✉️</span>
+                                <span class="reach-name">Email</span>
+                                <span class="reach-handle">ninsai2007@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
-                <div class="contact-form-col">
-                    <div class="form-box">
-                        <div class="form-title">Send a message</div>
-                        <form action="https://formspree.io/f/xykbgrjk" method="POST">
-                            <div class="form-row">
-                                <div class="field">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your name" required />
-                                </div>
-                                <div class="field">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
-                                </div>
+            <article class="about-section last-section reveal">
+                <div class="section-label">
+                    <span class="section-index">02</span>
+                    <span class="section-name">Send a message</span>
+                </div>
+                <div class="section-body">
+                    <form action="https://formspree.io/f/xykbgrjk" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required />
                             </div>
                             <div class="field">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" placeholder="What's it about?"
-                                    required />
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required />
                             </div>
-                            <div class="field">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Hey Nithin, I'd love to..."
-                                    required></textarea>
-                            </div>
-                            <button type="submit" class="submit-btn">Send message →</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's it about?" required />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Hey Nithin, I'd love to..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send message →</button>
+                    </form>
                 </div>
-            </div>
-        </div>
+            </article>
 
-        <footer class="contact-footer">
-            © 2026 Nithin Sai. All rights reserved.
-        </footer>
+        </section>
+
+        <section class="bottom">
+            <hr />
+            <footer>
+                <p class="text-center mt-5 mb-3">© 2026 Nithin Sai. All rights reserved.</p>
+            </footer>
+        </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+            const rows = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            rows.forEach(row => {
+                row.classList.add('reveal-armed');
+                observer.observe(row);
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -45,7 +45,7 @@
                     becoming a skilled developer who creates meaningful and efficient solutions.</p>
             </div>
 
-            <article class="about-section">
+            <article class="about-section reveal">
                 <div class="section-label">
                     <span class="section-index">01</span>
                     <span class="section-name">Focus</span>
@@ -53,18 +53,16 @@
                 <div class="section-body">
                     <ul class="focus-list">
                         <li><span class="highlight">DSA</span> — strengthening problem-solving skills</li>
-                        <li><span class="highlight">CodeForces</span> — competitive
-                            programming and algorithmic problem-solving</li>
-                        <li>Building web applications that <span class="highlight">solve real problems</span> —
-                            full-stack, scalable, production-ready</li>
+                        <li><span class="highlight">Java & OOP</span> — proficient in object-oriented programming
+                            concepts</li>
+                        <li>Developing modern, responsive web applications</li>
+                        <li><span class="highlight">Full-stack development</span> and scalable systems</li>
                         <li>Learning new technologies through real-world projects</li>
-                        <li><span class="highlight">Machine Learning</span> — Machine Learning — exploring ML
-                            fundamentals</li>
                     </ul>
                 </div>
             </article>
 
-            <article class="about-section">
+            <article class="about-section reveal">
                 <div class="section-label">
                     <span class="section-index">02</span>
                     <span class="section-name">Mindset</span>
@@ -83,7 +81,7 @@
                 </div>
             </article>
 
-            <article class="about-section">
+            <article class="about-section reveal">
                 <div class="section-label">
                     <span class="section-index">03</span>
                     <span class="section-name">Education</span>
@@ -104,7 +102,7 @@
                 </div>
             </article>
 
-            <article class="about-section">
+            <article class="about-section reveal">
                 <div class="section-label">
                     <span class="section-index">04</span>
                     <span class="section-name">Now / Next</span>
@@ -113,31 +111,31 @@
                     <div class="now-next-col">
                         <p class="now-next-heading">Currently learning</p>
                         <div class="tag-row">
-                            <span class="tag tag-bright">Machine learning</span>
+                            <span class="tag tag-bright">C++</span>
                             <span class="tag">Tailwind CSS</span>
                             <span class="tag">Next.js</span>
                             <span class="tag tag-bright">Data Structures & Algorithms</span>
                             <span class="tag tag-bright">TypeScript</span>
                             <span class="tag">Redis</span>
-                            <span class="tag">BullMQ</span>
+                            <span class="tag tag-bright">PostgreSQL</span>
                         </div>
                     </div>
                     <div class="now-next-col">
                         <p class="now-next-heading">Future learning goals</p>
                         <ul class="goal-list">
-                            <li><span class="highlight">Agentic AI</span></li>
+                            <li><span class="highlight">Advanced Java Concepts</span></li>
                             <li>LangChain</li>
                             <li>NLP</li>
                             <li><span class="highlight">DSA mastery</span></li>
-                            <li>CI/CD</li>
-                            <li>Docker</li>
+                            <li>Cloud computing basics</li>
+                            <li>Open source contributions</li>
                             <li>Cybersecurity fundamentals</li>
                         </ul>
                     </div>
                 </div>
             </article>
 
-            <article class="about-section">
+            <article class="about-section reveal">
                 <div class="section-label">
                     <span class="section-index">05</span>
                     <span class="section-name">Skills</span>
@@ -197,7 +195,7 @@
                 </div>
             </article>
 
-            <article class="about-section last-section">
+            <article class="about-section last-section reveal">
                 <div class="section-label">
                     <span class="section-index">06</span>
                     <span class="section-name">Off Screen</span>
@@ -208,7 +206,7 @@
                             <span class="hobby-icon">🎬</span>
                             <div>
                                 <p class="hobby-title">Cinema</p>
-                                <p class="hobby-desc">Cinematographic craft </p>
+                                <p class="hobby-desc">Storytelling and cinematography</p>
                             </div>
                         </div>
                         <div class="hobby-item">
@@ -228,8 +226,8 @@
                         <div class="hobby-item">
                             <span class="hobby-icon">💰</span>
                             <div>
-                                <p class="hobby-title">Finance</p>
-                                <p class="hobby-desc">Financial knowledge</p>
+                                <p class="hobby-title">Personal Finance</p>
+                                <p class="hobby-desc">Financial independence</p>
                             </div>
                         </div>
                     </div>
@@ -249,6 +247,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+            const rows = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            rows.forEach(row => {
+                row.classList.add('reveal-armed');
+                observer.observe(row);
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -384,3 +384,14 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.reveal-armed {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-armed.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
