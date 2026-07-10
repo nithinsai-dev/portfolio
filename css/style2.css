@@ -98,7 +98,6 @@ body {
     gap: 3rem;
     padding: 3rem 0;
     border-bottom: 1px solid var(--hairline);
-    animation: slideUp 0.9s ease forwards;
 }
 
 .about-section.last-section {
