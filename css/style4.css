@@ -1,26 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+:root {
+    --bg: #0d1117;
+    --box-bg: #161b22;
+    --box-bg-alt: #1c2128;
+    --violet: #7b2ff7;
+    --violet-2: #9f44d3;
+    --violet-light: hsl(259, 94%, 73%);
+    --border: rgba(123, 47, 247, 0.15);
+    --border-strong: rgba(123, 47, 247, 0.5);
+    --text: #ffffff;
+    --text-muted: #8b949e;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
 
 body {
-    background-color: #0d1117 !important;
-    color: #ffffff !important;
-    font-family: 'Niccone', cursive;
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: var(--font-body);
 }
 
 .navbar {
-    background-color: #0d1117 !important;
+    background-color: var(--bg) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     animation: slideDown 1s ease forwards;
 }
 
 .navbar-brand {
-    font-family: 'Niccone', cursive;
+    font-family: var(--font-display);
     font-weight: 600;
     letter-spacing: 1px;
-    color: #ffffff !important;
+    color: var(--text) !important;
 }
 
 .navbar-toggler {
-    border-color: rgba(123, 47, 247, 0.4) !important;
+    border-color: var(--border-strong) !important;
 }
 
 .navbar-toggler-icon {
@@ -28,39 +43,53 @@ body {
 }
 
 .nav-pills .nav-link {
-    color: #ffffff !important;
-    font-family: 'Niccone', cursive;
+    color: var(--text) !important;
+    font-family: var(--font-body);
+    font-weight: 500;
 }
 
-
 .nav-pills .nav-link.active {
-    background: linear-gradient(45deg, #7b2ff7, #9f44d3) !important;
-    color: #ffffff !important;
+    background: linear-gradient(45deg, var(--violet), var(--violet-2)) !important;
+    color: var(--text) !important;
     border-radius: 8px;
+}
+
+.highlight {
+    color: var(--violet-light);
+    font-weight: 600;
 }
 
 .contact-hero {
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 44px;
     animation: fadeIn 1.2s ease-in-out forwards;
 }
 
-.contact-hero h1 {
-    font-family: 'Niccone', cursive;
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 10px;
+.contact-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 13px;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--violet-light);
+    margin-bottom: 10px;
 }
 
-.contact-hero p {
-    font-size: 14px;
-    color: #8b949e;
-    max-width: 360px;
+.contact-hero h1 {
+    font-family: var(--font-display);
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 14px;
+    letter-spacing: -1px;
+}
+
+.contact-sub {
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 420px;
     margin: 0 auto;
     line-height: 1.8;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
 }
 
 .contact-grid {
@@ -72,8 +101,8 @@ body {
 }
 
 .contact-card {
-    background: #161b22;
-    border: 0.5px solid rgba(123, 47, 247, 0.15);
+    background: var(--box-bg);
+    border: 0.5px solid var(--border);
     border-radius: 14px;
     padding: 18px 20px;
     display: flex;
@@ -84,8 +113,8 @@ body {
 }
 
 .contact-card:hover {
-    border-color: rgba(123, 47, 247, 0.5);
-    background: #1c2128;
+    border-color: var(--border-strong);
+    background: var(--box-bg-alt);
     transform: translateY(-2px);
 }
 
@@ -93,7 +122,7 @@ body {
     width: 42px;
     height: 42px;
     border-radius: 10px;
-    background: #1c2128;
+    background: var(--box-bg-alt);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,33 +133,33 @@ body {
 .contact-card-text strong {
     display: block;
     font-size: 13px;
-    font-weight: 500;
-    color: #ffffff;
+    font-weight: 600;
+    color: var(--text);
     margin-bottom: 2px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-display);
 }
 
 .contact-card-text span {
     font-size: 12px;
-    color: #8b949e;
-    font-family: 'Inter', sans-serif;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
 }
 
 .form-box {
-    background: #161b22;
-    border: 0.5px solid rgba(123, 47, 247, 0.15);
+    background: var(--box-bg);
+    border: 0.5px solid var(--border);
     border-radius: 16px;
     padding: 32px;
     animation: slideRight 1.6s ease-in-out forwards;
 }
 
 .form-title {
-    font-family: 'Niccone', cursive;
-    font-size: 18px;
+    font-family: var(--font-display);
+    font-size: 19px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text);
     margin-bottom: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .form-row {
@@ -143,42 +172,39 @@ body {
     margin-bottom: 16px;
 }
 
-.highlight {
-    color: hsl(259, 94%, 73%);
-}
-
 .field label {
     display: block;
     font-size: 12px;
-    color: #8b949e;
+    color: var(--text-muted);
     margin-bottom: 7px;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-mono);
+    letter-spacing: 0.5px;
 }
 
 .field input,
 .field textarea {
     width: 100%;
-    background: #1c2128;
-    border: 0.5px solid rgba(123, 47, 247, 0.15);
+    background: var(--box-bg-alt);
+    border: 0.5px solid var(--border);
     border-radius: 8px;
     padding: 11px 14px;
     font-size: 13px;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    font-family: var(--font-body);
     outline: none;
     transition: border-color 0.2s;
 }
 
 .field input::placeholder,
 .field textarea::placeholder {
-    color: #8b949e;
+    color: var(--text-muted);
     opacity: 0.6;
 }
 
 .field input:focus,
 .field textarea:focus {
-    border-color: rgba(123, 47, 247, 0.6);
+    border-color: var(--border-strong);
 }
 
 .field textarea {
@@ -189,16 +215,16 @@ body {
 .submit-btn {
     width: 100%;
     padding: 13px;
-    background: linear-gradient(45deg, #7b2ff7, #9f44d3);
-    color: #ffffff;
+    background: linear-gradient(45deg, var(--violet), var(--violet-2));
+    color: var(--text);
     border: none;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
-    font-family: 'Niccone', cursive;
+    font-family: var(--font-body);
     cursor: pointer;
     margin-top: 6px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: opacity 0.2s, transform 0.1s;
 }
 
@@ -214,8 +240,8 @@ body {
     text-align: center;
     padding: 16px;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
-    color: #8b949e;
-    font-family: 'Inter', sans-serif;
+    color: var(--text-muted);
+    font-family: var(--font-body);
     font-size: 12px;
 }
 
@@ -233,7 +259,7 @@ body {
 
 @media (max-width: 600px) {
     .contact-hero h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .contact-grid {
